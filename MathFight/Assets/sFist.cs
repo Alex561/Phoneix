@@ -11,7 +11,7 @@ public class sFist : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision col)
 	{
-		if (col.gameObject.name == "SHead") {
+		if (col.gameObject.name == "Knee") {
 			Debug.Log("HIT!!!!!!!!");
 			p1.ow();
 		}
