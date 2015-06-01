@@ -9,10 +9,11 @@ public class p1Controller : MonoBehaviour {
 	public AudioClip wrongSound;
 	public AudioClip punch;
 	private AudioSource source;
-
+	Animator anim;
 	// Use this for initialization
 	void Start () {
 		source = GetComponent<AudioSource>();
+		anim= GetComponent<Animator> ();
 		pg = GameObject.Find("problems").GetComponent<problemGenerator>();
 		hp2 = GameObject.Find ("HP2").GetComponent<hp> ();
 	}
@@ -25,10 +26,13 @@ public class p1Controller : MonoBehaviour {
 			
 			pg.ap1 -=1;
 			Debug.Log("w");
-			//put punch animation
 			source.PlayOneShot(punch,5f);
 			hp2.health -=1;
+			anim.SetTrigger("Punch");
 		
+		}
+		else if (Input.GetKeyDown (KeyCode.S)) {
+			anim.SetTrigger("Block");
 		}
 		if (Input.GetKeyDown(KeyCode.Z)){
 			if(pg.question== ("0U") || pg.question == ("3U")){

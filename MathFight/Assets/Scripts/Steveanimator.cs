@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Steveanimator : MonoBehaviour {
 	Animator anim_s;
-	int punch=Animator.StringToHash("Punch");
 	// Use this for initialization
 	void Start () {
 		anim_s= GetComponent<Animator> ();

@@ -9,14 +9,21 @@ public class p2Controller : MonoBehaviour {
 	public AudioClip wrongSound1;
 	public AudioClip punch;
 	private AudioSource source;
+	Animator anim_s;
 	// Use this for initialization
 	void Start () {
 		source = GetComponent<AudioSource>();
+		anim_s= GetComponent<Animator> ();
 		pg = GameObject.Find("problems").GetComponent<problemGenerator>();
 		hp1 = GameObject.Find ("HP1").GetComponent<hp> ();
 	}
 	
 	// Update is called once per frame
+	public void ow (){
+		anim_s.SetTrigger("Punched");
+		Debug.Log ("I got Punched");
+
+	}
 	void Update () {
 		
 		if (Input.GetKeyDown (KeyCode.O) && pg.ap2 !=0)
@@ -25,8 +32,11 @@ public class p2Controller : MonoBehaviour {
 			pg.ap2 -=1;
 			Debug.Log("o");
 			hp1.health-=1;
-			///call punch
+			anim_s.SetTrigger("Punch");
 			source.PlayOneShot(punch,5f);
+		}
+		else if (Input.GetKeyDown (KeyCode.L)) {
+			anim_s.SetTrigger("Block");
 		}
 		if (Input.GetKeyDown(KeyCode.B)){
 			if(pg.question== ("0U") || pg.question == ("3U")){
