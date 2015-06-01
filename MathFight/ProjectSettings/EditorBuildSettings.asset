@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu_scene.unity
   - enabled: 1
+    path: Assets/Scenes/trainingscene.unity
+  - enabled: 1
     path: Assets/Scenes/Fight.unity
   - enabled: 1
     path: Assets/Scenes/BatmanWins.unity
   - enabled: 1
     path: Assets/Scenes/SteveWins.unity
-  - enabled: 1
-    path: Assets/Scenes/trainingscene.unity
