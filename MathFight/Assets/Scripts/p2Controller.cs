@@ -5,6 +5,7 @@ public class p2Controller : MonoBehaviour {
 
 	public problemGenerator pg;
 	public hp hp1;
+	public hp hp2;
 	public AudioClip correctSound1;
 	public AudioClip wrongSound1;
 	public AudioClip punch;
@@ -16,12 +17,15 @@ public class p2Controller : MonoBehaviour {
 		anim_s= GetComponent<Animator> ();
 		pg = GameObject.Find("problems").GetComponent<problemGenerator>();
 		hp1 = GameObject.Find ("HP1").GetComponent<hp> ();
+		hp2 = GameObject.Find ("HP2").GetComponent<hp> ();
 	}
 	
 	// Update is called once per frame
 	public void ow (){
 		anim_s.SetTrigger("Punched");
 		Debug.Log ("I got Punched");
+		hp2.health -= 1;
+
 
 	}
 	void Update () {
@@ -31,7 +35,7 @@ public class p2Controller : MonoBehaviour {
 			
 			pg.ap2 -=1;
 			Debug.Log("o");
-			hp1.health-=1;
+			//hp1.health-=1;
 			anim_s.SetTrigger("Punch");
 			source.PlayOneShot(punch,5f);
 		}

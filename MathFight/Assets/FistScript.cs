@@ -9,6 +9,16 @@ public class FistScript : MonoBehaviour {
 		hp1 = GameObject.Find ("HP1").GetComponent<hp> ();
 		p2 = GameObject.Find ("Steve Salute(For Blender Only)").GetComponent<p2Controller> ();
 	}
+//	void OnTriggerEnter(Collider other){
+//		if (other.gameObject.name == "SHead") {
+//			Debug.Log ("trigger enter");
+//		}
+//	}
+//	void OnTriggerExit(Collider other){
+//		if (other.gameObject.name == "SHead") {
+//			Debug.Log ("trigger leave");
+//		}
+//	}
 	void OnCollisionEnter (Collision col)
 	{
 		if (col.gameObject.name == "SHead") {

@@ -44,7 +44,6 @@ public class problemGenerator : MonoBehaviour {
 	}
 	public string changeProblem(){
 		int n = Random.Range (0, unitCircle.Count);
-		Debug.Log ("I was called");
 		problemText.text = unitCircle[n];
 		string q = (n.ToString() + "U");
 		return q;
