@@ -12,15 +12,15 @@ public class Particle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.W)&& pg.ap1!=0){
-			Flame.enableEmission = true;
-			Debug.Log("lol");
+			Flame.Play ();
 		}
 
 		if(Input.GetKeyUp(KeyCode.W)){
-			Flame.enableEmission = false;
-		};
+			Flame.Stop ();
+		}
 		;
 		
+
 
 	
 	}
