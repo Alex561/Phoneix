@@ -7,6 +7,7 @@ public class batmananimation : MonoBehaviour {
 	public AudioClip punch;
 	private AudioSource source;
 	public Text answerC1;
+	public Text ap;
 	Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -17,10 +18,12 @@ public class batmananimation : MonoBehaviour {
 			"X: sqrt(3)/2 \n" +
 				"C:0 \n" +
 				"V:1";
+		ap.text = ("ap1: " + lr.ap1.ToString());
 	}
 
 	void Update ()
 	{
+		ap.text = ("ap1: " + lr.ap1.ToString());
 		AnimatorStateInfo stateinfo = anim.GetCurrentAnimatorStateInfo (0);
 		if (Input.GetKeyDown (KeyCode.W)&& lr.ap1!=0)
 		{

@@ -10,15 +10,12 @@ public class lessonremover : MonoBehaviour {
 	public string name;
 	public int input_count=0;
 	private AudioSource source;
+	public AudioClip correct;
 	// Use this for initialization
 	void Start () {
+		source = GetComponent<AudioSource>();
 		ap1 = 1;
 	}
-	//void OnGUI()
-	//{
-		//name = GUI.TextField (new Rect (10, 10, 200, 200), name, 25);
-	//}
-	// Update is called once per frame
 	void OnCollisionEnter (Collision col)
 	{
 		if(input_count==0)
@@ -45,15 +42,18 @@ public class lessonremover : MonoBehaviour {
 
 			if (Input.GetKeyDown(KeyCode.V)&& input_count ==1) { 
 
+				source.PlayOneShot(correct,5f);
 				ap1+=1;
 
 			}
 			else if((Input.GetKeyDown(KeyCode.Z))&&(input_count==2))
 			{
+			source.PlayOneShot(correct,5f);
 				ap1+=1;
 			}
 			else if(Input.GetKeyDown(KeyCode.X)&&input_count==3)
 			{
+			source.PlayOneShot(correct,5f);
 				ap1+=1;
 			}
 
