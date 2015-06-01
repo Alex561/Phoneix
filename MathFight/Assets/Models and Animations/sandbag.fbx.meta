@@ -39,6 +39,10 @@ ModelImporter:
     400028: Point
     400030: //RootNode
     400032: Sun
+    2300000: Cylinder
+    2300002: Cylinder.001
+    3300000: Cylinder
+    3300002: Cylinder.001
     4300000: Cylinder.001
     4300002: Cylinder
     7400000: Armature|ArmatureAction
@@ -67,6 +71,8 @@ ModelImporter:
     7400046: Point|CylinderAction.001
     7400048: Sun|CylinderAction.001
     7400050: Camera|CylinderAction.001
+    7400052: Armature|shake_punched
+    7400054: Armature|one filp
     9500000: //RootNode
     13700000: Cylinder
     13700002: Cylinder.001
@@ -87,10 +93,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Sandbag_punched
-      takeName: Armature|Sandbag_punched
+      name: Armature|Static
+      takeName: Armature|Static
       firstFrame: 0
-      lastFrame: 17
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -147,10 +153,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Armature|Static
-      takeName: Armature|Static
+      name: Armature|one filp
+      takeName: Armature|one filp
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 6
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -194,11 +200,11 @@ ModelImporter:
         weight: 1
       - path: Armature/Bone.003/Bone.004/Bone.004_end
         weight: 1
+      - path: Armature/Cylinder
+        weight: 1
+      - path: Armature/Cylinder.001
+        weight: 1
       - path: Camera
-        weight: 1
-      - path: Cylinder
-        weight: 1
-      - path: Cylinder.001
         weight: 1
       - path: Point
         weight: 1
