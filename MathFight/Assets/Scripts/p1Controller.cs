@@ -17,7 +17,11 @@ public class p1Controller : MonoBehaviour {
 		pg = GameObject.Find("problems").GetComponent<problemGenerator>();
 		hp2 = GameObject.Find ("HP2").GetComponent<hp> ();
 	}
-	
+	public void ow (){
+		anim.SetTrigger("Punched");
+		Debug.Log ("I got Punched");
+		
+	}
 	// Update is called once per frame
 	void Update () {
 		
