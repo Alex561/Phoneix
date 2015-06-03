@@ -247,15 +247,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.98733497
+      value: 2.36999989
       objectReference: {fileID: 0}
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.62212342
+      value: -.670000017
       objectReference: {fileID: 0}
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -.316415608
+      value: -.349999994
       objectReference: {fileID: 0}
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalRotation.x
@@ -279,11 +279,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalScale.x
-      value: .247127235
+      value: .360727191
       objectReference: {fileID: 0}
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalScale.z
-      value: .247127205
+      value: .511951506
       objectReference: {fileID: 0}
     - target: {fileID: 5431048, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_IsKinematic
@@ -303,7 +303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471570, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_LocalScale.y
-      value: .247127146
+      value: .372841984
       objectReference: {fileID: 0}
     - target: {fileID: 104582, guid: 8310434c4dc90ec46b7f2deabc5c9096, type: 2}
       propertyPath: m_Layer
@@ -938,18 +938,6 @@ MonoBehaviour:
   correctSound1: {fileID: 8300000, guid: 557a175d182402e4898f95c5895f4285, type: 3}
   wrongSound1: {fileID: 8300000, guid: 2ebbfea3de4fc49489542e4d098689e4, type: 3}
   punch: {fileID: 8300000, guid: 6e9772eba9387c243a9cc5bac9a98070, type: 3}
---- !u!65 &476821982
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 476821975}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.40259528, y: 10.1384687, z: 1}
-  m_Center: {x: -1.20129669, y: 4.56923294, z: 0}
 --- !u!4 &488706416 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400058, guid: c3e7157be0d6f7c4f81efdc689c9fd01, type: 3}

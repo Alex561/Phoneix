@@ -7,7 +7,7 @@ public class ruledisplayscript : MonoBehaviour {
 	void Start () {
 	
 	}
-	void OnGUI()
+	public void Rules()
 	{
 		GUI.Label (new Rect (10, 10, 100, 20), "what are the controls lol?");
 	}
